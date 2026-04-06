@@ -1,4 +1,3 @@
-# MernStack-Hospital-Appointment-Booking-Project
 # Hospital Appointment Booking
 
 A comprehensive Hospital Appointment Booking platform built using the MERN stack context (MongoDB, Express, React, Node.js) with Next.js serving as the full-stack framework. 
