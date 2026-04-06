@@ -1,0 +1,197 @@
+.adminContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.backBtn {
+    color: var(--text-lighter);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.backBtn:hover {
+    color: var(--primary);
+}
+
+.title {
+    font-size: 1.8rem;
+    color: var(--text-main);
+}
+
+.bookingsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bookingCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--background);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bookingCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.bookingInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctorName {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.specialty {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.hospitalName {
+    color: var(--text-lighter);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.bookingMeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.dateTime {
+    font-weight: 500;
+    color: var(--text-main);
+    background-color: var(--hover-bg);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.Confirmed {
+    background-color: #DEF7EC;
+    color: #03543F;
+}
+
+.Pending {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.Cancelled {
+    background-color: #FDE8E8;
+    color: #9B1C1C;
+}
+
+.Expired {
+    background-color: #F1F5F9;
+    color: #475569;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--background);
+    border-radius: 8px;
+    border: 1px dashed var(--border);
+}
+
+.emptyState h3 {
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.emptyState p {
+    color: var(--text-lighter);
+    margin-bottom: 20px;
+}
+
+.adminWrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .adminWrapper {
+        flex-direction: column;
+    }
+}
+
+.bookingsSection {
+    flex: 2;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 24px;
+    width: 100%;
+}
+
+.usersSection {
+    flex: 1;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 24px;
+    width: 100%;
+    position: sticky;
+    top: 40px;
+}
+
+.userCard {
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--background);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.userCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.userName {
+    font-weight: 600;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+}
+
+.userEmail {
+    font-size: 0.85rem;
+    color: var(--text-lighter);
+}

@@ -1,0 +1,103 @@
+.authContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-color) 0%, #D8EAF8 100%);
+    padding: 20px;
+}
+
+.authCard {
+    width: 100%;
+    max-width: 450px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.authHeader {
+    text-align: center;
+    padding: 40px 30px 20px;
+}
+
+.authTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.authSubtitle {
+    color: var(--text-lighter);
+}
+
+.authBody {
+    padding: 20px 30px 40px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    outline: none;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.formGroup input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.submitBtn {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.toggleAuth {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-lighter);
+}
+
+.toggleLink {
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.toggleLink:hover {
+    text-decoration: underline;
+}
+
+.backHome {
+    display: inline-block;
+    color: var(--text-lighter);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.backHome:hover {
+    color: var(--text-main);
+}

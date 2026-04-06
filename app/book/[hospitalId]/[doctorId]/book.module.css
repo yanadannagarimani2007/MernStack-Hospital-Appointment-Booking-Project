@@ -1,0 +1,141 @@
+.bookContainer {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--bg-color) 0%, #E8F4FD 100%);
+    animation: fadeIn 0.4s ease-out;
+}
+
+.bookCard {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.header {
+    padding: 30px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-color);
+    position: relative;
+}
+
+.backBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--text-lighter);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.backBtn:hover {
+    color: var(--primary);
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-lighter);
+    margin-top: 5px;
+}
+
+.formBody {
+    padding: 30px;
+}
+
+.infoSection {
+    background: #F1F5F9;
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+    margin-bottom: 25px;
+}
+
+.infoRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.infoRow:last-child {
+    margin-bottom: 0;
+}
+
+.infoLabel {
+    font-weight: 600;
+    color: var(--text-lighter);
+    font-size: 0.9rem;
+}
+
+.infoValue {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.formGroup input,
+.formGroup select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    outline: none;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: var(--white);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.submitBtn {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.successState {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.checkIcon {
+    font-size: 4rem;
+    color: #10B981;
+    margin-bottom: 20px;
+}
+
+.successTitle {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.successDesc {
+    color: var(--text-lighter);
+    margin-bottom: 30px;
+}

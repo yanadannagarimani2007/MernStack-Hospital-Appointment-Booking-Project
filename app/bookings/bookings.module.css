@@ -1,0 +1,150 @@
+.bookingsContainer {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: var(--bg-color);
+    animation: fadeIn 0.4s ease-out;
+}
+
+.header {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.backBtn {
+    color: var(--text-lighter);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+.backBtn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.bookingsList {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookingCard {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bookingCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.bookingInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.doctorName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.specialty {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.hospitalName {
+    color: var(--text-lighter);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bookingMeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.dateTime {
+    background: #F1F5F9;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status.Confirmed {
+    background: #D1FAE5;
+    color: #059669;
+}
+
+.status.Pending {
+    background: #FEF3C7;
+    color: #D97706;
+}
+
+.status.Cancelled {
+    background: #FEE2E2;
+    color: #DC2626;
+}
+
+.status.Expired {
+    background: #F1F5F9;
+    color: #475569;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--border);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.emptyState h3 {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.emptyState p {
+    color: var(--text-lighter);
+    margin-bottom: 20px;
+}
